@@ -1,0 +1,76 @@
+//@import '~bulma';
+
+$background-dark: #1A1A1A;
+$gray-dark: #2E2E2E;
+$teal-dark: #1B3B3B;
+$golden-yellow: #FFB300;
+$bright-gold: #FFD700;
+$text-light: #E0E0E0;
+$orange-highlight: #FFA500;
+$primary: #1B3B3B;
+
+header {
+  background-color: $gray-dark;
+  color: $text-light;
+  padding: 10px 0;
+}
+
+.body {
+  height: 600px;
+  width: 800px;
+}
+
+.auth-background {
+  background-image: url('../public/illuminated_circuit_board_golden.jpeg'); // Adjusted the path
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; // Ensure it covers the full viewport height
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1A1A1A inset !important; /* Match this color to your input background */
+  -webkit-text-fill-color: #E0E0E0 !important; /* Match this color to your input text color */
+}
